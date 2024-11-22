@@ -7,7 +7,8 @@ from rich.console import Console
 from rich.table import Table
 from HackSessionBot.Helpers.data import LOG_TEXT,ART
 from pyromod import listen 
-
+import sqlite3
+conn = sqlite3.connect(":memory:")  # قاعدة بيانات في الذاكرة
 #getting variables
 API_ID = Config.API_ID
 API_HASH = Config.API_HASH
